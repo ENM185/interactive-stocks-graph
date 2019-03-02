@@ -158,7 +158,6 @@ function refreshNews(date) {
   console.log(toJulian(date));
   document.getElementById("gsc-i-id1").value = document.getElementById("stock").options[document.getElementById("stock").selectedIndex].label + " stock news " + date;
   document.getElementsByClassName("gsc-search-button")[1].click();
-  $('.gsc-adBlock').hide()
 }
 
 function toJulian(date) {
@@ -192,5 +191,8 @@ $(document).ready(function(){
     stock = $('option:selected', this).attr("ticker");
     console.log(stock)
     drawChart();
-});
+  });
+  $('.gsc-adBlock').change(function () {
+    $('.gsc-adBlock').hide();
+  });
 })

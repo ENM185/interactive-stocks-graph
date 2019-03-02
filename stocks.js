@@ -192,7 +192,7 @@ $(document).ready(function(){
     console.log(stock)
     drawChart();
   });
-  $('.gsc-adBlock').change(function () {
+  $('.gsc-adBlock').ready(function () {
     $('.gsc-adBlock').hide();
   });
 })

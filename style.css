@@ -53,3 +53,6 @@ svg > g > g:last-child { pointer-events: none }
     .gsc-above-wrapper-area {
         display: none;
     }
+    .gsc-adBlock {
+        display:none;
+    }

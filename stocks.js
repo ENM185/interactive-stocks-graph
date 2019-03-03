@@ -193,6 +193,6 @@ $(document).ready(function(){
     drawChart();
   });
   $('.gsc-adBlock').ready(function () {
-    $('.gsc-adBlock').hide();
+    $('#news').scrollTop($('.gsc-adBlock').height());
   });
 })

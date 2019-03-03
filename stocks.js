@@ -158,7 +158,7 @@ function refreshNews(date) {
   console.log(toJulian(date));
   document.getElementById("gsc-i-id1").value = document.getElementById("stock").options[document.getElementById("stock").selectedIndex].label + " stock news " + date;
   document.getElementsByClassName("gsc-search-button")[1].click();
-  $('#news').scrollTop($('.gsc-adBlock').first().height());
+  $('.gsc-adBlock').first().css("display","none");
 }
 
 function toJulian(date) {
